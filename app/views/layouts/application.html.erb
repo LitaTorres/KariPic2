@@ -28,14 +28,14 @@
                     <%= link_to current_user.email, edit_user_registration_path, class:"nav-link" %> </a>
                   </li>
                   <li class="nav-item border border-secondary">
-                    <%= link_to "PUBLICACIONES", class:"nav-link" %>
+                    <%= link_to "PUBLICACIONES", publications_path , class:"nav-link" %>
                   </li>
                   <li class="nav-item  border border-secondary">
                     <%= link_to "SALIR", destroy_user_session_path, class:"nav-link" %>
                   </li>
             <% else %>
                   <li class="nav-item  border border-secondary">
-                    <%= link_to "PUBLICACIONES", class:"nav-link" %>
+                    <%= link_to "PUBLICACIONES", publications_path , class:"nav-link" %>
                   </li>
                   <li class="nav-item  border border-secondary">
                     <%= link_to "INICIAR SESIÓN", new_user_session_path, class:"nav-link" %>
@@ -48,20 +48,6 @@
         </div>
       </div>
     </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="container">
       <p class="notice"><%= notice %></p>
