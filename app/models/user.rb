@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   has_many :publications
+  has_many :comments
+
+  #accepts_nested_attributes_for :images
+
+  enum :role, [:normal, :admin]
 end

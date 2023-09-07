@@ -26,6 +26,11 @@
   </div> <!--Imprimiendo el current user id-->
 
   <div>
+    <%= form.label :images, style: "display: block" %>
+    <%= form.file_field :images, multiple: true %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
